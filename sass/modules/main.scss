@@ -1,0 +1,32 @@
+//do your improrts first, so that they are available evertywhere
+@import "_vars";
+@import "_navbar";
+
+
+
+
+//adding some css variables
+$global-bg-color: blue;
+$global-font-color:white;
+
+body { background-color: $body-bg;}
+
+h1, h2, h3 {
+    color: $heading-color;
+}
+.panel {
+    height: 80vh;
+}
+ .panel:nth-child(even) {
+     background-color: salmon;
+     color: white;
+ }
+
+ #to-top {
+     position:fixed;
+     bottom: 10px;
+     right: 10px;
+     display: none;
+ }
+
+ @import "modules/_footer"
